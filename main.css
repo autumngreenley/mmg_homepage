@@ -3,6 +3,7 @@ html {
     background-blend-mode: multiply,normal;
     -webkit-font-smoothing: antialiased;*/
     background-image:linear-gradient(to bottom, #4B3A4A, #966093);
+    background: rgb(67 40 72);
 }
 
 pre {
@@ -45,6 +46,11 @@ a.button {
   -webkit-text-stroke-color: black;
 }
 
+a.button:hover {
+    text-shadow: 0px 0px 10px white;
+    text-decoration: none;
+}
+
 .logo {
     width: 270px;
     height: 101px;
@@ -64,6 +70,8 @@ a.button {
     padding-top: 170px;
     border: 2px solid black;
     text-align: center;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px black;
 }
 
 .quote{

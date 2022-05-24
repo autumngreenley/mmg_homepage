@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!-- I suppose in the long term we would want:
+*An about us page, with snippets about both Elita and I
+*A games page, with a list of games that we've created
+*A contact page, with our email and maybe a web form
+*A recreation of the linktree, with links to our various socials
+*A blog -->
 <html>
     
     <head>
@@ -12,18 +18,40 @@
       href="images/mortallymoonstruck.ico">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="main.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Sacramento&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        <div="container">
-           <div="row">
-               <div="col-md-12">
-                    <h1 align="center">Mortally Moonstruck Games</h1>
-                    <img class="img-fluid" src="images/logo.png" alt="A photo of the author" width="350" >
-                    <p>
-                        An indie gamedev duo from the PNW, making games that are sweet and dark
-                    </p>
+        <div>
+            <div class="header">
+                <div class="header-contents">
+                    <img src="images/LogoHeader.png" class="logo">
+                    <div class="buttons">
+                        <a href="" class="button">About</a>
+                        <a href="" class="button">Games</a>
+                        <a href="" class="button">Blog</a>
+                        <a href="" class="button">Contact</a>
+                    </div>
+                    <div class="sm-icons">
+                        <img class="sm-icon" src="images/icons8-twitter-100.png">
+                        <img class="sm-icon" src="images/itchicon.png">
+                    </div>
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="content">
+                    <h1 class="quote" align="center">Dark Games for Sweet Teeth</h1>
+                    <img class="focus-img" src="images/sharing_image.png" alt="A photo of the author" width="350" >
+                    <div class="body-text">
+                        <p>
+                            An indie gamedev duo from the PNW, making games that are sweet and dark
+                        </p>
+                    </div>
                     <hr>
-                   <ul>
+                    <ul class="link-tree">
                        <li>
                            <a href="https://twitter.com/mortalmoongames" target="_blank">Twitter</a>
                        </li>
@@ -33,7 +61,11 @@
                        <li>
                            <a href="https://linktr.ee/mortallymoonstruckgames" target="_blank">Linktree</a>
                        </li>
-                   </ul>
+                    </ul>
+                    <div class="icon-credit">
+                        <a target="_blank" href="https://icons8.com/icon/6BmXkftCQhH8/twitter">Twitter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                        <a target="_blank" href="https://icons8.com/icon/SkSDLLT4SCXw/itch-io">Itch Io</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                    </div>
                 </div>
             </div>
         </div>

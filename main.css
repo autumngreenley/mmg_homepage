@@ -11,18 +11,107 @@ pre {
     padding: 5px;
 }
 
+.header {
+    height: 170px;
+    color: #fff;
+    background: url(images/drip.svg);
+    padding: 10px;
+/*    background-color: linear-gradient(90deg, rgba(93,65,99,1) 0%, rgba(93,65,99,1) 47%, rgba(210,188,214,1) 49%, rgba(210,188,214,1) 100%);*/
+/*    background-size: 60% 100%;*/
+    background-size: 210px 170px;
+    position:absolute;
+    width: 100%;
+    top: -2px;
+}
+
+.header-contents {
+    display: flex;
+}
+
+.buttons {
+    margin: 10px;
+    margin-left: 5%;
+    margin-top: 20px;
+    align-self: center;
+}
+
+a.button {
+    font-family: 'Koulen', cursive;
+    font-size: 35px;
+    padding-left: 20px;
+    color: black;
+      -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.logo {
+    width: 270px;
+    height: 101px;
+    margin-top: 3px;
+/*    margin-left: 100px;*/
+    margin-left: 9%;
+}
+
+.content-container {
+    text-align: -webkit-center;
+/*    margin-top: 200px;*/
+}
+
+.content {
+    max-width: 90%;
+    background: #f2eaf4;
+    padding-top: 170px;
+    border: 2px solid black;
+}
+
+.quote{
+    font-family: sacramento;
+    font-size: 60px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.body-text{
+    margin-top: 30px;
+    font-family: calibri;
+    font-size: 18px;
+}
+.link-tree {
+    list-style: none;
+}
+
+.icon-credit {
+    font-size: 10px;
+}
+.sm-icons {
+    margin-left: 5%;
+    align-self: center;
+}
+
+.sm-icon {
+    width: 50px;
+    margin-left: 15px;
+}
+
+.focus-img{
+    border-radius: 20px;
+      box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
 body {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+    background: #eee;
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);*/
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    margin: 40px auto;
-    max-width: 80%;
-    padding: 20px 40px 20px;
-    border-style: solid
+/*    margin: 40px auto;*/
+/*    max-width: 80%;*/
+/*    padding: 20px 40px 20px;*/
+/*    border-style: solid*/
+    background: linear-gradient(180deg, rgb(92 78 95) 0%, rgb(67 40 72) 100%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,19 +126,62 @@ h2 {
 }
 
 a {
-    color: #0083e8;
+/*    color: #0083e8;*/
+    color: #e9beed;
 }
 
 b, strong {
     font-weight: 600;
 }
 
-img {
-    border-style: solid;
-    border-width: 8x;
-    border-color: #4B3A4A;
-    border-radius: 10px;
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
+
+@media only screen and (max-width: 1070px) {
+    .buttons {
+/*
+        margin: 10px;
+        margin-left: 5%;
+        margin-top: 20px;
+*/
+    }
+
+    a.button {
+        font-size: 25px;
+        padding-left: 10px;
+/*
+        color: black;
+        -webkit-text-fill-color: white;  Will override color (regardless of order) 
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: black;
+*/
+    }
+    .logo {
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 906px) {
+    .sm-icon {
+        width: 30px;
+    }
+    .sm-icons {
+        margin-left: 2%;
+    }
+    a.button{
+        font-size: 22px;
+        -webkit-text-fill-color: white;  Will override color (regardless of order) 
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    .sm-icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .button {
+        display: none;
+    }
 }

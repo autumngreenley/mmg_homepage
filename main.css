@@ -54,15 +54,16 @@ a.button {
 }
 
 .content-container {
-    text-align: -webkit-center;
-/*    margin-top: 200px;*/
+    justify-content: center;
+    display: flex;
 }
 
 .content {
-    max-width: 90%;
+    width: 90%;
     background: #f2eaf4;
     padding-top: 170px;
     border: 2px solid black;
+    text-align: center;
 }
 
 .quote{

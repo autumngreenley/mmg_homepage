@@ -1,9 +1,6 @@
 html {
-    /*background-image:url(https://image.freepik.com/free-vector/wrinkled-paper-texture_1100-12.jpg), linear-gradient(to bottom, #e6ffe9, #f7fff8);
-    background-blend-mode: multiply,normal;
-    -webkit-font-smoothing: antialiased;*/
     background-image:linear-gradient(to bottom, #4B3A4A, #966093);
-    background: rgb(67 40 72);
+    background: #302133;
 }
 
 pre {
@@ -17,8 +14,6 @@ pre {
     color: #fff;
     background: url(images/drip.svg);
     padding: 10px;
-/*    background-color: linear-gradient(90deg, rgba(93,65,99,1) 0%, rgba(93,65,99,1) 47%, rgba(210,188,214,1) 49%, rgba(210,188,214,1) 100%);*/
-/*    background-size: 60% 100%;*/
     background-size: 210px 170px;
     position:absolute;
     width: 100%;
@@ -41,9 +36,14 @@ a.button {
     font-size: 35px;
     padding-left: 20px;
     color: black;
-      -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    -webkit-transition: text-shadow 0.1s linear;
+    -moz-transition: text-shadow 0.1s linear;
+    -ms-transition: text-shadow 0.1s linear;
+    -o-transition: text-shadow 0.1s linear;
+    transition: text-shadow 0.1s linear;
 }
 
 a.button:hover {
@@ -55,7 +55,6 @@ a.button:hover {
     width: 270px;
     height: 101px;
     margin-top: 3px;
-/*    margin-left: 100px;*/
     margin-left: 9%;
 }
 
@@ -82,16 +81,12 @@ a.button:hover {
 
 .body-text{
     margin-top: 30px;
-    font-family: calibri;
     font-size: 18px;
 }
 .link-tree {
     list-style: none;
 }
 
-.icon-credit {
-    font-size: 10px;
-}
 .sm-icons {
     margin-left: 5%;
     align-self: center;
@@ -100,26 +95,68 @@ a.button:hover {
 .sm-icon {
     width: 50px;
     margin-left: 15px;
+    transition: all .2s ease-in-out; 
 }
+
+.sm-icon:hover { 
+transform: scale(1.1); 
+}
+
 
 .focus-img{
     border-radius: 20px;
       box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.footer{
+    color: white;
+    padding: 10px;
+    padding-top: 40px;
+    margin-top: -25px;
+    padding-bottom: 35px;
+    
+/*    border: 1px solid black;*/
+    text-align: center;
+    background: url(images/shroom.svg);
+    background-size: 210px 170px;
+/*    background-color: 966093;*/
+}
+
+a.secondary-button {
+    font-family: 'Koulen', cursive;
+    font-size: 15px;
+    padding-left: 10px;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: .4px;
+    -webkit-text-stroke-color: black;
+    -webkit-transition: text-shadow 0.1s linear;
+    -moz-transition: text-shadow 0.1s linear;
+    -ms-transition: text-shadow 0.1s linear;
+    -o-transition: text-shadow 0.1s linear;
+    transition: text-shadow 0.1s linear;
+}
+
+a.secondary-button:hover {
+    text-shadow: 0px 0px 4px white;
+    text-decoration: none;
+}
+
+.secondary-buttons{
+    margin-left: 40px;
+}
+
+.icon-credit {
+    margin-left: 48px;
+    font-size: 10px;
 }
 
 body {
     background: #eee;
-/*    border-radius: 10px;*/
-/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);*/
     color: #545454;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 1.5;
-/*    margin: 40px auto;*/
-/*    max-width: 80%;*/
-/*    padding: 20px 40px 20px;*/
-/*    border-style: solid*/
     background: linear-gradient(180deg, rgb(92 78 95) 0%, rgb(67 40 72) 100%);
 }
 
@@ -135,7 +172,6 @@ h2 {
 }
 
 a {
-/*    color: #0083e8;*/
     color: #e9beed;
 }
 
@@ -145,23 +181,9 @@ b, strong {
 
 
 @media only screen and (max-width: 1070px) {
-    .buttons {
-/*
-        margin: 10px;
-        margin-left: 5%;
-        margin-top: 20px;
-*/
-    }
-
     a.button {
         font-size: 25px;
         padding-left: 10px;
-/*
-        color: black;
-        -webkit-text-fill-color: white;  Will override color (regardless of order) 
-        -webkit-text-stroke-width: 1.5px;
-        -webkit-text-stroke-color: black;
-*/
     }
     .logo {
         margin-left: 5%;

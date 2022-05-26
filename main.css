@@ -22,6 +22,7 @@ pre {
 
 .header-contents {
     display: flex;
+    justify-content: center;
 }
 
 .buttons {
@@ -55,7 +56,11 @@ a.button:hover {
     width: 270px;
     height: 101px;
     margin-top: 3px;
-    margin-left: 9%;
+    transition: all .2s ease-in-out; 
+}
+
+.logo:hover {
+    transform: scale(1.03);
 }
 
 .content-container {
@@ -85,8 +90,8 @@ a.button:hover {
 }
 .link-tree {
     list-style: none;
+    padding-bottom: 15px;
 }
-
 .sm-icons {
     margin-left: 5%;
     align-self: center;
@@ -99,13 +104,14 @@ a.button:hover {
 }
 
 .sm-icon:hover { 
-transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 
 .focus-img{
     border-radius: 20px;
-      box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 100%;
 }
 
 .footer{
@@ -114,12 +120,9 @@ transform: scale(1.1);
     padding-top: 40px;
     margin-top: -25px;
     padding-bottom: 35px;
-    
-/*    border: 1px solid black;*/
     text-align: center;
     background: url(images/shroom.svg);
     background-size: 210px 170px;
-/*    background-color: 966093;*/
 }
 
 a.secondary-button {
@@ -137,17 +140,21 @@ a.secondary-button {
     transition: text-shadow 0.1s linear;
 }
 
+a.secondary-button:first-child{
+    padding-left: 0px !important;
+}
+
 a.secondary-button:hover {
     text-shadow: 0px 0px 4px white;
     text-decoration: none;
 }
 
 .secondary-buttons{
-    margin-left: 40px;
+/*    margin-left: 40px;*/
 }
 
 .icon-credit {
-    margin-left: 48px;
+/*    margin-left: 48px;*/
     font-size: 10px;
 }
 

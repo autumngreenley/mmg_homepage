@@ -225,3 +225,12 @@ b, strong {
         display: none;
     }
 }
+.row_head {
+    background-color: #a7a6ba
+}
+.row_body {
+    background-color: #cccccc
+}
+.row_foot {
+    background-color: #a7a6ba
+}

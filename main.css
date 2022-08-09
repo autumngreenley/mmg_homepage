@@ -15,6 +15,23 @@ li {
     align-self: center;
 }
 
+table {
+    align-self: center;
+}
+
+.body-text {
+    display:grid;
+}
+
+.left-cell {
+    text-align: right;
+}
+
+.right-cell {
+    text-align: left;
+    padding-left: 50px;
+}
+
 .header {
     height: 170px;
     color: #fff;

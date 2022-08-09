@@ -9,6 +9,12 @@ pre {
     padding: 5px;
 }
 
+li {
+    list-style: none;
+    text-align: center;
+    align-self: center;
+}
+
 .header {
     height: 170px;
     color: #fff;
@@ -86,9 +92,20 @@ a.button:hover {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
+.section-header{
+    font-family: sacramento;
+    font-size: 40px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
 .body-text{
     margin-top: 30px;
     font-size: 22px;
+}
+.mm-body-text{
+    margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 .link-tree {
     list-style: none;
@@ -158,6 +175,59 @@ a.secondary-button:hover {
 .icon-credit {
 /*    margin-left: 48px;*/
     font-size: 10px;
+}
+
+.stages-header {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: sacramento;
+}
+
+.example-header {
+    font-family: sacramento;
+    font-size: 25px;
+/*    font-style: oblique;*/
+}
+.carousel-indicators{
+    position: initial;
+}
+.carousel-control-prev{
+    left: 35px
+}
+.carousel-control-next{
+    right: 55px
+}
+.carousel-control-next, .carousel-control-prev{
+    z-index: 1;
+    position: fixed !important;
+    opacity: 1;
+}
+.carousel-inner {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+.carousel-item{
+    padding: 10px;
+    padding-top: 10px;
+}
+
+.example {
+    background-color:aliceblue;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px;
+    padding-bottom: .5px;
+    margin-bottom: 10px;
+}
+
+.stages-summary {
+    font-style:italic;
+}
+
+.stages-body {
+    padding-top: 10px
 }
 
 body {

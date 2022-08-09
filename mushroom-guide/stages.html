@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mortally Moonstruck Games</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="A homepage for Mortally Moonstruck Games">
+        <link rel="icon" type="image/png" href="../images/mortallymoonstruck.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../main.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Sacramento&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-contents">
+                <a href="index.html"><img src="../images/LogoHeader.png" class="logo"></a>
+                <div class="buttons">
+                    <a href="about.html" class="button">About</a>
+                    <a href="games.html" class="button">Games</a>
+                    <a target="_blank" href="https://mortallymoonstruckgames.tumblr.com/" class="button">Blog</a>
+                    <a href="contact.html" class="button">Contact</a>
+                </div>
+                <div class="sm-icons">
+                    <a href="https://twitter.com/mortalmoongames" target="_blank"><img class="sm-icon" src="../images/icons8-twitter-100.png"></a>
+                    <a href="https://mortallymoonstruckgames.itch.io/" target="_blank"><img class="sm-icon" src="../images/itchicon.png"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-container">
+            <div class="content">
+                <div class="stages">
+                    <h1 class="section-header" align="center">Stages of Play</h1>
+                    <div class="mm-body-text">
+                        There are three primary stages of play.
+                    </div>
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="0">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="stages">
+                            <h class="stages-header">1. Witch and Spore</h>
+                            <div class="stages-summary">Determine the starting type and color of your mushroom with the Witch of the Woods.</div>
+                            <p class="stages-body">The first portion of the game has the player choosing the objects they use to create the daughter. The player doesn't always get every option in every playthrough, and sometimes a rare choice may appear in place of a common option that can lead to a special result.
+
+                            This section should last for about three rounds, but have a couple more so that on each playthrough you can get a different set of three.
+                            </p>
+                            <div class="example">
+                            <h class="example-header">For Example...</h>
+                            <p class="example-body"><b>The Quest:</b> "You must provide an heirloom for your daughter to inherit".<br>
+                            <b>Full pool of choices:</b> A knife (creepy), a well season cast iron skillet (culinary), a trained foraging pig (ultra rare chance culinary), a moldy handkerchief (poison), a music box (bright), an occult tomb (magic)<br><br>
+
+                            After bringing the witch a certain number of items (maybe 3), the game will decide based on your choices what type of daughter you will get. See, the witch failed to reveal that unfortunately, she can only do mushroom related magic… Yikes. Anyways, your type of daughter is her species of mushroom (For example, she could be a spooky ink cap or a delicious truffle if you chose the ultra rare pig option).
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <h class="stages-header">2. Cultivation</h>
+                            <div class="stages-summary">Grow your mushroom through the stages of Mushroom, Creature, and Child, making sacrifices and choices.</div>
+                            <p class="stages-body">
+                            The second portion of the game begins after the mushroom first blooms. At first, it appears to be a normal mushroom. This section introduces a couple of resources that you have to balance with your choices.<br><br>
+
+                            The resources are:<br>
+                            <b>Finances</b>, correlated with how much literal money you have<br>
+                            <b>Nutrients</b>, correlated with the physical necessities your daughter has<br>
+                            <b>Stamina</b>, correlated with the capacity you have to do things for your daughter<br><br>
+
+                            There are also several conditions you have to balance. These can all be raised, or lowered, by story events. If they fall too low, Bad Things Happen.<br><br>
+
+                            <b>The Environment</b>, this is a condition introduced when your daughter is still a mushroom. <br>
+                            This measures how ideal her growing conditions are (an abstract representation of things like temperature and humidity). <i>Under the hood, a good environment multiplies her quality. The better it is, the higher quality she'll be.</i><br>
+                            <b>Affection</b>, this is introduced when she starts becoming a sentient thing. <br>
+                            This measures how much attention and love you give her. <i>Similar to the quality multiplier above, higher affection multiplies her stat gain (so if she's well taken care of, she'll get like 1.5x stat growth or something).</i><br>    
+                            <b>Her General Health</b>, this condition is introduced when she becomes a little girl. <br>
+                            As a shambling being with enough intelligence to get her into trouble, her health is pretty important and potentially volatile. <i>There is no multiplier for this condition, but she will die if it gets too low, so you know...</i><br><br>
+
+                            You will trade your resources to increase both your daughters stats (to be used in the next section) and also her conditions.
+                            </p>
+                            <div class="example">
+                            <h class="example-header">For Example...</h>
+                            <p class="example-body">
+                            <i>'A recent drought combined with a broken well have lead to difficulties procuring water for your daughter. Do you want to seek someone from the nearby village to fix your well, costing you 5 Finances? Or do you neglect the immediate needs of your mushroom to fix the well yourself… Or perhaps you decide to not fix it at all.'</i><br>
+                            (If you choose to spend the money, you lose the finances, but your daughters Environment and Wetness stat improve. Otherwise, you lose stamina and affection, but she gets the same stat boosts. If you don't do anything, she loses Wetness and Environment.)<br><br>
+
+                            After a few rounds as a normal mushroom, it grows into a living creature. This opens a new set of tough choices. After it's done a couple more rounds, it grows into a child. This child is still clearly a mushroom based entity, but almost appears to be human. You have one final round of 3ish choices to finish the round out, determining your daughter's starting stats.
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <h  class="stages-header">3. A Girl on Her Own</h>
+                            <div class="stages-summary">Make choices and guide your mushroom girl through a series of storylets.</div>
+                            <p class="stages-body">
+                            Finally, your child has grown into a young mushroom woman, capable of making her own  choices. For the rest of the game, you play as your daughter as she makes her way in the world.<br><br>
+
+                            Unfortunately, the world is tough for a young mushroom girl. Lots of things can go wrong for something that has basically never existed before. She's faced with choices that sometimes have lasting consequences.<br><br>
+
+                            Essentially, your girl has a 'deck' of possible things that could happen to her (think of the life deck in Life). This deck is composed of normal events that could happen to anyone, special events that only happen because of the daughter's type or stats, or story events that can unlock further complications in the story.<br><br>
+
+                            Many things could happen during these events. Maybe her stats change, or maybe you learn more about a story that could unlock a special ending. If you're really unlucky, maybe you'll die. Try not to do that!<br><br>
+
+                            After a certain amount of time, the game ends. If you manage to survive, then you get an ending. This ending can be either based on your stats (A good ending if you have high stats in certain areas, bad endings in certain others), or perhaps you've unlocked a special ending based on a storyline you've completed.<br>
+                            </p>
+                            <div class="example">
+                            <h class="example-header">For Example... A Normal Event</h>
+                            <p class="example-body">
+                            <i>'You go for a walk through the Village and notice a glimmering at the bottom of a well. You are filled with curiosity. Do you want to climb into the well and attempt to find out what it is, or walk away?'</i><br><br>
+
+                            <b>'Climb Into the Well'</b>:<br>
+                            (Depending on the daughters stats, you have a certain percentage chance of success and a certain percentage chance of failure, so there's two possible results if you pick this option)<br>
+                            <b><i>Success:</i></b><br>
+                            <i>'You manage to make your way to the bottom of the well without incident. As you reach your destination, you can make out the shape clearly: a well decorated pocket watch. It still works, even. You put it in your pocket, excited for the luxury.'</i><br>
+                            (The Daughter gains a certain amount of stats, maybe her Human increases for getting a human luxury item and her Potency increases at the thrill of the climb)<br>
+                            <b><i>Failure:</i></b><br>
+                            <i>'As you begin scaling the rough brick downward, you go to put your foot somewhere where there is no hold. You slip, saved only by the kindness and quick reflexes of a nearby stranger. Other than a bruised ego, you're fine.'</i><br>
+                            (The Daughter may lose or gain stats, perhaps she loses some Mycelium because she feels embarrassment)<br><br>
+
+                            <b>'Walk Away'</b>:<br>
+                            <i>'You walk away, feeling a minor disappointment that you'll never know the identity of the glimmer, but comfortable that you'll at least walk away with all limbs in tact.'</i><br>
+                            (You may lose a little bit of a stat as a cowards tax, but not as bad as failing the check above)
+                            </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control left" href="#my-carousel" data-slide="prev">&lsaquo;</a>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                    <a href="main.html">Return</a>
+                    <div class="mm-body-text">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="secondary-buttons">
+                <a class="secondary-button" href="">About</a> <a class="secondary-button" href="">Games</a> <a target="_blank" class="secondary-button" href="https://mortallymoonstruckgames.tumblr.com/">Blog</a> <a class="secondary-button" href="">Contact</a>
+            </div>
+            <div class="icon-credit">
+                <a target="_blank" href="https://icons8.com/icon/6BmXkftCQhH8/twitter">Twitter</a> and <a target="_blank" href="https://icons8.com/icon/SkSDLLT4SCXw/itch-io">Itch Io</a> icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </body>
+</html>

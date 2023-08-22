@@ -120,7 +120,7 @@ a.extra-button:hover {
 }
 
 .inner-content{
-	width: 60em;
+	/*width: 60em;*/
 	margin: auto;
 }
 
@@ -386,6 +386,8 @@ body {
     font-size: 15px;
     line-height: 1.5;
     background: linear-gradient(180deg, rgb(92 78 95) 0%, rgb(67 40 72) 100%);
+
+    min-width: unset !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -421,7 +423,7 @@ b, strong {
     	margin-top: 2.65em
     }
     a.button{
-        font-size: 28px;
+        font-size: 28px !important;
         -webkit-text-fill-color: white;  Will override color (regardless of order) 
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;

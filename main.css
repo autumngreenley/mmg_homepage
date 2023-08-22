@@ -423,21 +423,56 @@ b, strong {
 		max-width: 60%;
 	}
 	.mySlides > img{
-		width: 90%;
+		width: 100%;
 	}
     .slides {
+		/*height: 285px;*/
     	/*margin-left: 2.65em*/
     }
 
     .slide-overlay-text {
-    	font-size: 15px;
+    	font-size: 25px;
     }
     .slide-download-text {
-    	font-size: 15px;
+    	font-size: 25px;
+    }
+
+    .slideshow-buttons {
+    	margin-top: 0%;
+    }
+
+    .slideshow-button-div > img{
+		border-radius: 3px;
+
+    }
+}
+@media only screen and (max-width: 800px) {
+	.slideshow-buttons {
+		margin-top: -15%;
+	}
+}
+
+@media only screen and (max-width: 755px) {
+    .sm-icon {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 700px) {
+	.slideshow-buttons {
+		margin-top: -20%;
+	}
+	.slides {
+		/*margin-left: -2.2em;*/
+		/*height: 160px;*/
+		width: 90%;
+	}
+	.mySlides{
+		/*max-width: 90%*/
+	}
+	.content {
+		width: 100%;
+	}
     .header-contents {
     	margin-top: 2.65em
     }
@@ -447,7 +482,35 @@ b, strong {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
     }
+
+    .slide-overlay-text {
+    	font-size: 15px;
+    }
+    .slide-download-text {
+    	font-size: 15px;
+    }
+
 }
+
+@media only screen and (max-width: 600px) {
+	.slideshow-buttons {
+		margin-top: -30%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.slideshow-buttons {
+		margin-top: -45%;
+	}
+}
+
+
+@media only screen and (max-width: 450px) {
+	.slideshow-buttons {
+		margin-top: -60%;
+	}
+}
+
 
 @media only screen and (max-width: 430px) {
 	.logo-icon {
@@ -458,13 +521,38 @@ b, strong {
     .button {
         display: none;
     }
-}
 
-@media only screen and (max-width: 755px) {
-    .sm-icon {
-        display: none;
+    .slideshow-buttons {
+    	margin-top: -60%;
     }
 }
+
+@media only screen and (max-width: 400px) {
+	.slideshow-buttons {
+		margin-top: -70%;
+	}
+
+	.slide-overlay-text {
+		font-size: 10px;
+	}
+	.slide-download-text {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.slideshow-buttons {
+		margin-top: -80%;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	.slideshow-buttons {
+		margin-top: -90%;
+	}
+}
+
+
 
 .row_head {
     background-color: #a7a6ba

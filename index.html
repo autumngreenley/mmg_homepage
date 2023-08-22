@@ -17,7 +17,9 @@
     <body>
         <div class="header">
             <div class="header-contents">
-                <a href="index.html"><img src="images/LogoHeader.png" class="logo"></a>
+                <div class="sm-icons">
+                    <a href="index.html"><img class="logo-icon" width="60px" src="images/logo_bw.png"></a>
+                </div>
                 <div class="buttons">
                     <a href="about.html" class="button">About</a>
                     <a href="games.html" class="button">Games</a>
@@ -30,26 +32,86 @@
                 </div>
             </div>
         </div>
-        <div class="content-container">
-            <div class="content">
-<!--                <h1 class="quote" align="center">Dark Games for Sweet Teeth</h1>-->
-                <h1 class="quote" align="center">Sweet Tales for Dark Tastes</h1>
-                <a href="https://autumnotopia.itch.io/making-friends" target="_blank"><img class="focus-img" src="images/makingfriends_sharing_image.png" alt="Making Friends" width="350" ></a>
-                <a href="https://mortallymoonstruckgames.itch.io/mushroom-musume" target="_blank"><img class="focus-img" src="images/mushroommusume_sharing_image.png" alt="Mushroom Musume" width="350" ></a>
+
+
+
+        <div class="content">
+            <div class="inner-content">
+                <img width="90%" src="images/LogoHeader.png">
+                <h1 class="quote" align="center">Sweet Stories for Dark Tastes</h1>
                 <div class="body-text">
-                    <p>
-                        Hello! Welcome to our homepage. Feel free to take a seat, make yourself comfortable. We're an indie gamedev group from the PNW. In general we tend to lean towards making things that are cute, but with teeth. 
-                    </p>
-                    <p>
-                        We're still setting things up, so forgive our dust.
-                    </p>
+                    <p> A small indie gamedev group from the PNW focused on creepy-cute narrative games, working hobbyist-hard to bring you something novel. </p>
+
                 </div>
+
                 <hr>
-                <div class="link-tree">
-                   <a href="https://linktr.ee/mortallymoonstruckgames" target="_blank">Linktree</a>
+                <div class="slideshow" >
+                    <div class="slides">
+                        <div class="mySlides" style="width:100%;opacity:0">
+                            <p class="slide-overlay-text">If you can't find any organic friends, homemade is fine. A short girls' love visual novel about companionship.</p>
+                            <p class="slide-download-text">Buy now on <a target="_blank" href="https://autumnotopia.itch.io/making-friends">itch.io</a></p>
+                            <img src="images/makingfriends_sharing_image.png" >
+                        </div>
+                        <div class="mySlides" style="width:100%">
+                            <p class="slide-overlay-text">Grow a daughter all your own, from spore to fine young woman. A child-raising sim/adventure game.</p>
+                            <p class="slide-download-text">Download for free from <a target="_blank" href="https://mortallymoonstruckgames.itch.io/mushroom-musume">itch.io</a></p>
+                            <img src="images/mushroommusume_sharing_image.png">
+                        </div>
+                        <div class="mySlides" style="width:100%;opacity:0">
+                            <p class="slide-overlay-text">Would you go on a date with death? A sapphic kinetic novel.</p>
+                            <p class="slide-download-text">Download for free from <a target="_blank" href="https://mortallymoonstruckgames.itch.io/things-are-grim">itch.io</a></p>
+                            <img src="images/thingsaregrim_sharing_image.png">
+                        </div>
+                    </div>
+
+                  <div class="slideshow-buttons">
+                    <div class="slideshow-button-div">
+                      <img class="demo w3-opacity w3-hover-opacity-off slideshow-button" src="images/makingfriends_sharing_image.png" onclick="currentDiv(1)">
+                    </div>
+                    <div class="slideshow-button-div">
+                      <img class="demo w3-opacity w3-hover-opacity-off slideshow-button" src="images/mushroommusume_sharing_image.png" onclick="currentDiv(2)">
+                    </div>
+                    <div class="slideshow-button-div">
+                      <img class="demo w3-opacity w3-hover-opacity-off slideshow-button" src="images/thingsaregrim_sharing_image.png" onclick="currentDiv(3)">
+                    </div>
+                  </div>
                 </div>
+
+                <script>
+                function currentDiv(n) {
+                  showDivs(slideIndex = n);
+                }
+
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("demo");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    // x[i].style.display = "none";
+                    x[i].style.opacity = 0;
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                  }
+                  // x[slideIndex-1].style.display = "block";
+                  x[slideIndex-1].style.opacity = 1;
+                  dots[slideIndex-1].className += " w3-opacity-off";
+                }
+                </script>
+
+
+            </div>
+            <hr>
+            <div class="link-tree">
+               <a href="https://linktr.ee/mortallymoonstruckgames" target="_blank">Linktree</a>
             </div>
         </div>
+
+
+
+
         <div class="footer">
             <div class="secondary-buttons">
                 <a class="secondary-button" href="about.html">About</a> <a class="secondary-button" href="games.html">Games</a> <a class="secondary-button" href="contact.html">Contact</a>
